@@ -32,7 +32,7 @@
     - [프로그래머스 코테 고득점 Kit](https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit)
     - [코드업 기초 100제](https://codeup.kr/problemsetsol.php?psid=33)
 
-- 주차별 폴더 안에 각자 이름으로 폴더 생성 후 문제번호.py 파일 생성하여 코드 작성
+- 주차별 폴더 안에 각자 이름<span style='background-color: #fff5b1'>(영어)</span>으로 폴더 생성 후 문제번호.py 파일 생성하여 코드 작성
 
 - 코드와 함께 문제의 접근 방식과 풀이 설명을 기록
 
