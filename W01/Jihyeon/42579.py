@@ -34,19 +34,3 @@ def solution(genres, plays):
     return answer
 
 
-
-
-
-
-# # total 딕셔너리의 value를 내림차순으로 정렬 후 key 리스트를 만들어줌
-# rank = sorted(total, key=total.get, reverse=True)
-
-# for j in rank:
-#     play_rank = sorted(gen[j], key=lambda x: (j[0], j[1]))
-    
-#     if len(play_rank) == 1:
-#         answer.append(play_rank[0][1])
-#     else:
-#         for i in range(2):
-#             answer.append(play_rank[i][2])
-#             pass
