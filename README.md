@@ -12,9 +12,9 @@
 
 ### :watch: **TIME**
 
-- 문제 풀이 제출 기한: 금요일 00시
+- 문제 풀이 제출 기한: 일요일 밤 12시
 - 피드백: 스터디 진행 시간 전까지
-- 스터디 진행 시간: 일요일 20시
+- 스터디 진행 시간: 화요일 20시
 
 
 <br>
@@ -22,6 +22,8 @@
 ### ✏️**Method of Progress**
 
 - 해당 폴더 fork 후 clone하여 PR하는 방식으로 진행
+
+- 각자의 영어 이름으로 된 branch 생성 후 PR
 
 - GitHub을 통해 코드 공유 / 피드백
 
@@ -32,7 +34,7 @@
     - [프로그래머스 코테 고득점 Kit](https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit)
     - [코드업 기초 100제](https://codeup.kr/problemsetsol.php?psid=33)
 
-- 주차별 폴더 안에 각자 이름으로 폴더 생성 후 문제번호.py 파일 생성하여 코드 작성
+- 주차별 폴더 안에 각자 이름<span style='background-color: #fff5b1'>(영어)</span>으로 폴더 생성 후 문제번호.py 파일 생성하여 코드 작성
 
 - 코드와 함께 문제의 접근 방식과 풀이 설명을 기록
 
@@ -41,7 +43,7 @@
 - 문제 풀이 파일 방식
 
     ```python
-    # 시간복잡도, 공간복잡도
+    # 시간복잡도
     # 작성한 코드
     """
     문제 접근 방식과 풀이 설명
