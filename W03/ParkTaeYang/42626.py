@@ -14,3 +14,5 @@ def solution(scoville, K):
         j = heapq.heappop(scoville)
         heapq.heappush(scoville,i+2*j)
         cnt +=1
+
+# 시간복잡도는 heapift O(N)에 heappop,heappush logN O(NlongN)

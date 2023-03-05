@@ -24,3 +24,5 @@ def solution(jobs):
             t = b+a
     answer = sum(l)//len(l)
     return answer
+
+# 시간복잡도는 jobs 길이 n에 heappush, heappop logn O(nlogn)
