@@ -1,5 +1,4 @@
 from collections import deque
-import copy
 def solution(arr):
     dea = deque(arr)
     answer = [dea[0]]

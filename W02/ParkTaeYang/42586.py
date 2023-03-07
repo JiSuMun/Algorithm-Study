@@ -17,8 +17,6 @@ def solution(progresses, speeds):
 
         if cnt != 0 :
             answer.append(cnt)
-        
-
     return answer
 
 
