@@ -6,7 +6,7 @@
 from itertools import permutations
 # https://docs.python.org/3/library/itertools.html#itertools.permutations
 
-def solution(numbers): # O((n! + (n-1)! + ... + 1!)*(x^(1/2)))
+def solution(numbers): # O((n! + (n-1)! + ... + 1!) + len(arr) * max(arr)^(1/2)
     arr = {False}
     # 가능한 모든 순열을 생성한다.
     for i in range(1, len(numbers)+1): # O(n! + (n-1)! + ... + 1!),  n = len(numbers)
