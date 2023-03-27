@@ -6,7 +6,7 @@
 from itertools import permutations
 # https://docs.python.org/3/library/itertools.html#itertools.permutations
 
-def solution(numbers): # O((n! + (n-1)! + ... + 1!)*(x^(1/2)))
+def solution(numbers): # O((n! + (n-1)! + ... + 1!) + len(arr) * max(arr)^(1/2)
     arr = {False}
     # 가능한 모든 순열을 생성한다.
     for i in range(1, len(numbers)+1): # O(n! + (n-1)! + ... + 1!),  n = len(numbers)
@@ -34,3 +34,10 @@ def isPrime(x): # O(x^(1/2))
 
 # permutations(string, n) : 순열생성기
 # 주어진 문자열(string) 에서 크기 n의 순열을 생성한다.
+
+# 1: permutations의 시간복잡도는 n! 입니다.
+# 모든 가능한 순열을 생성하게되면 n! + (n-1)! + ... + 1! 입니다.
+# 문제의 경우 문자열의 길이가 최대 7 이므로 최대 5,913 입니다.
+# 2: 순열의 개수는 (2^n - 1) 입니다. 문제의 경우 n이 최대 7이므로 최대 2^7 -1 = 127 입니다.
+# 3: 소수 확인의 시간복잡도는 확인 대상 숫자에 의존합니다. : O(√x)
+# 문제의 경우 x의 최대값은 9,999,999 이며, 0부터 9,999,999까지의 제곱근 평균근사값은 약 3,000 입니다.
