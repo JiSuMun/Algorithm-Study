@@ -151,7 +151,6 @@ print("time :", end_time - start_time) # 수행 시간 출력
 자주 기출되지는 않지만, 사용되는 알고리즘이 어렵지 않으니 익혀두자.
 크루스칼, 프림 알고리즘을 공부하자.
 
-
 - 알고리즘 문제 풀이 사이트 (백준과 프로그래머스만 활용한다면 많은 기업의 코딩 테스트를 커버할 수 있다.)
 1. 입문자 추천 : [코드 시그널](https://app.codesignal.com), [게임코딩](https://www.codingame.com)
 1. [코딩도장](https://codingdojang.com)
