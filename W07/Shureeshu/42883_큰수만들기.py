@@ -38,3 +38,12 @@ print(solution(number, k))
 
 # Note The find() method should be used only if you need to know the position of sub. To check if sub is a substring or not, use the in operator:
 # >>> 'Py' in 'Python'
+
+# number의 첫 번째 숫자부터 k+1 번째 숫자 중에서 가장 큰 수를 선택합니다.
+# 선택한 수를 결과 문자열인 answer에 추가합니다.
+# 선택한 수 이후의 숫자들 중에서 k+1 번째까지의 숫자 중에서 가장 큰 수를 다시 선택합니다.
+# 이 과정을 k개의 숫자가 제거될 때까지 반복합니다.
+
+# 이 코드의 시간 복잡도는 O(k * n)입니다. 
+# 문자열에서 k+1개의 숫자 중에서 가장 큰 수를 찾는 과정에서 최악의 경우 k*n 시간이 소요됩니다.
+# 이 과정이 k번 반복되므로 전체 시간 복잡도는 O(k * n)이 됩니다.
