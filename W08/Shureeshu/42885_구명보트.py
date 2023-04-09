@@ -9,7 +9,7 @@ def solution(people, limit):
     # 무거운 순으로 정렬
     people.sort(reverse=True)
     
-    # boat[w] = 무게 제한까지 w만큼 여유 있는 보트의 수
+    # boat[] : 1명 타고 있는 보트
     boat = []
     
     for wp in people:
@@ -24,3 +24,5 @@ def solution(people, limit):
             boat.append(limit - wp)
     
     return answer + len(boat)
+
+# 시간복잡도 : O(nlogn)
