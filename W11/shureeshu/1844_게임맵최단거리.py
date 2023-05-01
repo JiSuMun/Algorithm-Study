@@ -1,52 +1,36 @@
-def solution1(maps):
-    n = len(maps)
-    m = len(maps[0])
-
-    go = [(0, -1), (0, +1), (+1, 0), (-1, 0)]
-
-    answer = 0
-    stack = [(0, 0, set())]
-    while stack:
-
-        x, y, path  = stack.pop()
-        new_path = path.union({(x,y)})
-        if x + 1 == n and y + 1 == m:
-
-            if answer:
-                answer = min(answer, len(new_path))
-            else:
-                answer = len(new_path)
-
-        for dx, dy in go:
-            next_x, next_y = x + dx, y + dy
-            if next_x in range(n) and next_y in range(m) and maps[next_x][next_y]:
-                if (next_x, next_y) not in path:
-                    stack.append((next_x, next_y, new_path))
-
-    if answer:
-        return answer
-    else:
-        return  -1
 
 # return 캐릭터가 상대 팀 진영에 도착하기 위해서 지나가야 하는 칸의 개수의 최솟값
 def solution(maps):
-    n = len(maps)
-    m = len(maps[0])
+
+    n, m = len(maps), len(maps[0])
     move = [(0, -1), (0, +1), (+1, 0), (-1, 0)]
+
+    
+    # BFS
     visited = [[0]*m for _ in range(n)]
     visited[n-1][m-1] = 1
+
     que = deque([(n-1, m-1)])
     while que:
         x, y = que.popleft()
         dist = visited[x][y]
+
+        # 각 방향에 대해
         for dx, dy in move:
             nx, ny = dx+x, dy+y
+
+            # 이동 가능하다면..
             if nx in range(n) and ny in range(m) and maps[nx][ny]:
+
+                # 목적지 도착
                 if nx == 0 and ny == 0:
                     return dist + 1
+                
+                # 탐색하지 않은 곳 또는 더 좋은 경로 발견
                 elif visited[nx][ny] == 0 or visited[nx][ny] > dist + 1:
                     visited[nx][ny] = dist + 1
                     que.append((dx+x, dy+y))
+
     return -1
                 
 
